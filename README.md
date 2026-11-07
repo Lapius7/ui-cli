@@ -15,7 +15,6 @@ pnpm dlx @lapius/ui list
 オプション `-o/--overwrite` `-y/--yes` `-p/--path` `-c/--cwd` は shadcn にそのまま渡します。
 
 - 実行中のパッケージマネージャー（pnpm / bun / yarn / npm）に合わせて shadcn を起動します。
-- レジストリの URL は環境変数 `LAPIUS_REGISTRY` で変えられます（既定 `https://shadcn.lapius7.com`）。
 - `NO_COLOR=1` で色を消せます。
 
 ## 開発

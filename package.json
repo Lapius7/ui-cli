@@ -1,11 +1,20 @@
 {
   "name": "@lapius/ui",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Install Lapius UI components into your project. A thin, friendly wrapper around the shadcn CLI.",
   "type": "module",
-  "bin": { "ui": "dist/cli.js", "lapius-ui": "dist/cli.js" },
-  "files": ["dist", "README.md", "LICENSE"],
-  "engines": { "node": ">=18" },
+  "bin": {
+    "ui": "dist/cli.js",
+    "lapius-ui": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "build": "bun build src/cli.ts --outfile dist/cli.js --target node --minify-syntax && sed -i '1i #!/usr/bin/env node' dist/cli.js && chmod +x dist/cli.js",
     "dev": "bun src/cli.ts",
@@ -19,8 +28,16 @@
     "@types/node": "^22.0.0",
     "typescript": "^5.6.0"
   },
-  "keywords": ["shadcn", "ui", "components", "cli"],
+  "keywords": [
+    "shadcn",
+    "ui",
+    "components",
+    "cli"
+  ],
   "author": "Lapius",
   "license": "MIT",
-  "repository": { "type": "git", "url": "git+https://github.com/Lapius7/ui-cli.git" }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lapius7/ui-cli.git"
+  }
 }

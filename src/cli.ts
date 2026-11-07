@@ -3,7 +3,7 @@ import * as p from "@clack/prompts";
 import pc from "picocolors";
 
 const VERSION = "0.1.0";
-const REGISTRY = (process.env.LAPIUS_REGISTRY ?? "https://shadcn.lapius7.com").replace(/\/$/, "");
+const REGISTRY = "https://shadcn.lapius7.com";
 
 type Item = { name: string; title?: string; description?: string };
 
